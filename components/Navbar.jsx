@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between border-b-2 border-black-200 px-2 py-4">
       <Link href="/">
-        <h2 className="text-lg font-bold">NTT App</h2>
+        <h2 className="text-lg font-bold hover:text-slate-500">NTT App</h2>
       </Link>
       <div>
         <Link
