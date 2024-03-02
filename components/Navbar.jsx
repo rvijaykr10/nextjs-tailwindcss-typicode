@@ -1,12 +1,25 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <nav className="flex justify-between border-b-2 border-black-200 px-2 py-4">
-      <h2>NTT App</h2>
+      <Link href="/">
+        <h2 className="text-lg font-bold">NTT App</h2>
+      </Link>
       <div>
-        <a>Users</a>
-        <a>Posts</a>
+        <Link
+          href="/users"
+          className="pr-2 hover:cursor-pointer hover:text-slate-500"
+        >
+          Users
+        </Link>
+        <Link
+          href="/posts"
+          className="hover:cursor-pointer hover:text-slate-500"
+        >
+          Posts
+        </Link>
       </div>
     </nav>
   );
